@@ -5,7 +5,7 @@ public class Item {
     private Product product;
     private  Integer quantity;
 
-    public Item() {
+    public Item(Item obtener) {
     }
 
     public Item(Product product, Integer quantity) {

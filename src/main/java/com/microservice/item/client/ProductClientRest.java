@@ -14,6 +14,6 @@ public interface ProductClientRest {
     @GetMapping(value = "/listar")
     List<Product> listar();
 
-    @GetMapping("/obtener/{id}/quantity/{quantity}")
-    Item obtener(@PathVariable Long id, @PathVariable Integer quantity);
+    @GetMapping("/obtener/{id}")
+    Product obtener(@PathVariable Long id);
 }
